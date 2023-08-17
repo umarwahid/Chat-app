@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+.PostCard > .card {
+  background-color: white;
+  border: none;
+  margin: 1rem auto;
+  width: 28rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PostCard > .card:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.PostCard > .card .card-body {
+  padding: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.PostCard > .card .user-info {
+  display: flex;
+  align-items: center;
+}
+
+.PostCard > .card .user-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.PostCard > .card .user-details {
   display: flex;
   flex-direction: column;
+}
+
+.PostCard > .card .user-details h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.PostCard > .card .user-details span {
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.PostCard > .card .card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.PostCard > .card .card-text p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.PostCard > .card .card-text img.post-image {
+  max-width: 476px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.PostCard > .card .btn {
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+}
+
+.PostCard > .card .btn-primary {
+  background-color: #1877f2;
+  border: none;
+}
+
+.PostCard > .card .btn-primary:hover {
+  background-color: #1466c6;
+}
+
+/* Existing CSS styles... */
+
+.PostCard > .card .comment-section {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.PostCard > .card .comment-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PostCard > .card .comment-input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  font-size: 14px;
 }
