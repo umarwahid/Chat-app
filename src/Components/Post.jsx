@@ -2,6 +2,7 @@ import React from 'react';
 import PostCard from './PostCard';
 import street2 from "./street.jpeg"
 import street3 from "./street2.jpeg"
+import pic4 from "./pic4.jpeg";
 
 
 export default function Post() {
@@ -22,10 +23,13 @@ export default function Post() {
                 <button className="btn btn-post">Post</button>
             </div>
         </div>
-      <PostCard name="Muhammad Umar" imgUrl="../myimage.jpg" content="image on beach" profileimg="../myimage.jpg"/>
-      <PostCard name="Hafiz Saad Rizvi" imgUrl="https://i.pinimg.com/736x/97/df/27/97df27c310ac2d5a8c8cacd12b21c20e.jpg" content="TLP Leader" profileimg="https://i.pinimg.com/736x/97/df/27/97df27c310ac2d5a8c8cacd12b21c20e.jpg"/>
-      <PostCard name="Muhammad Umar" imgUrl={street2} content="image on beach" profileimg="../myimage.jpg"/>
-      <PostCard name="Muhammad Umar" imgUrl={street3} content="image on beach" profileimg="../myimage.jpg"/>
+      <PostCard name="Muhammad Umar" imgUrl="../myimage.jpg" content="image on beach" profileimg="../myimage.jpg" time="Just now"/>
+      <PostCard name="Muhammad Umar" imgUrl={pic4} content="Imaginations" profileimg="../myimage.jpg" time="16 Hours"/>
+      <PostCard name="Muhammad Umar" imgUrl={street2}
+      content="Night View"
+      profileimg="../myimage.jpg"
+      time="24 hours"/>
+      <PostCard name="Muhammad Umar" imgUrl={street3} content="Sun Light View" profileimg="../myimage.jpg" time="14 August"/>
       </div>
   )
 }

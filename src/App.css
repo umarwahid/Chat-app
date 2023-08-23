@@ -3,7 +3,7 @@
   border: 1px solid gray;
   margin: 1rem auto;
   border-radius: 10px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   width: 32rem;
 }
@@ -46,8 +46,6 @@
 .btn-post:hover {
   background-color: #1466c6;
 }
-
-/* ... Previous CSS ... */
 
 .attachment {
   display: flex;
@@ -175,4 +173,51 @@
   border-radius: 20px;
   padding: 8px 15px;
   font-size: 14px;
+};
+
+/* counter */
+.counter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.counter {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  background-color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature > span {
+  font-size: 36px;
+  margin: 0 20px;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #007bff;
+  outline: none;
+}
+
+.icon-button:hover {
+  color: #0056b3;
 }

@@ -13,7 +13,7 @@ export default function PostCard(props) {
             <img className='profileimg' src={props.profileimg} alt="Profile" />
             <div className="user-details">
               <h3>{props.name}</h3>
-              <span>3 July 2023</span>
+              <span>{props.time}</span>
             </div>
           </div>
           <Card.Text>
